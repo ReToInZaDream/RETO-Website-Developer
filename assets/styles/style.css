@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-    --primary-Color: #939460;
+    --primary-Color: #81ac53;
     --Sec-Color: #912931;
     --accent-Color: #F71735;
     --white: #F4F4FF;
@@ -77,6 +77,7 @@ nav a:last-of-type:hover {
     height: 100vh;
     display: flex;
     align-items: center;
+    padding-top: 100px;
 }
 
 #hero .container {
@@ -435,4 +436,33 @@ footer img {
         width: 100%;
     }
 
+}
+
+@media all and (max-width: 385px) {
+    nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .profile-pic {
+        margin-top: 20px;
+        width: 300px;
+    }
+}
+
+@media all and (max-width: 300px) {
+    nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0 0 0;
+    }
+
+    .profile-pic {
+        margin-top: 20px;
+        width: 300px;
+        
+    } 
 }
